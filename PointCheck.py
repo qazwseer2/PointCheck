@@ -138,6 +138,8 @@ PointList = {
 "Ho-Oh":4,
 "Marshadow":4,
 "Mewtwo":4,
+"Mewtwo-mX":4,
+"Mewtwo-mY":4,
 "Necrozma-Dawn":4,
 "Necrozma-Dusk":4,
 "Rayquaza":4,
