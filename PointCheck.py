@@ -12,6 +12,7 @@ PointList = {
 "Excadrill":1,
 "Gallade-m":1,
 "Garchomp":1,
+"Garchomp-m":1,
 "Gardevoir-m":1,
 "Gligar":1,
 "Gliscor":1,
@@ -101,6 +102,7 @@ PointList = {
 "Scizor-m":2,
 "TapuKoko":2,
 "Slowbro":2,
+"Slowbro-m":2,
 "TapuLele":2,
 "Skarmory":2,
 "Tornadus-T":2,
@@ -156,7 +158,7 @@ PointList = {
 "Groudon-Primal":6,
 "Rayquaza-m":6
 }
-version = "1.0.3"
+version = "1.0.4"
 while True:
     team = input("Введите вашу команду(Mega - -m(Charizard-mY/Charizard-mX), Galar - -g(Weezing-g), Form - -Form name(Rotom-Heat)(Исключение: Thundurus-T), Tapu Lele-TapuLele)\nПример ввода: Rayquaza-m Thundurus-T Groudon-Primal Deoxys-Speed Rotom-Wash Rattata\n").split()
     points = 0
@@ -175,3 +177,10 @@ while True:
             print("В вашей команде слишком мало покемонов(",str(len(team)),")!")
         elif len(team) > 6:
             print("В вашей команде слишком много покемонов(",str(len(team)),")!")
+    isContinue=input("Продолжить?(y/n)")
+    if isContinue == "n" or isContinue == "N":
+        break
+    elif isContinue == "y" or isContinue == "Y":
+        continue
+    else:
+        print("Неверный ввод, повторный запуск программы.")
